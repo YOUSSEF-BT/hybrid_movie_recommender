@@ -1,0 +1,114 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// User model for authentication and user data
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  preferences UserPreferences?
+  likedFilms  UserFilmLike[]
+
+  @@map("users")
+}
+
+// User preferences for onboarding and recommendations
+// Ready for FastAPI recommendation system integration
+model UserPreferences {
+  id                  String                @id @default(uuid())
+  userId              String                @unique
+  user                User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  completedOnboarding Boolean               @default(false)
+  preferredGenres     UserGenrePreference[]
+  createdAt           DateTime              @default(now())
+  updatedAt           DateTime              @updatedAt
+
+  @@map("user_preferences")
+}
+
+// Film model - stores user-liked films from TMDB
+// Note: Films are primarily fetched from TMDB API, but we store likes in DB
+model Film {
+  id          String   @id @default(uuid())
+  title       String
+  director    String?
+  genre       String?
+  genres      String? // comma-separated list of genres
+  imageUrl    String?
+  backdropUrl String?
+  overview    String?
+  rating      Float?
+  trailerUrl  String?
+  year        Int?
+  tmdbId      Int?
+  createdAt   DateTime @default(now())
+
+  // Relations
+  likedBy    UserFilmLike[]
+  filmGenres FilmGenre[]
+
+  @@map("films")
+}
+
+// User likes for films
+// Stores which films users have liked for recommendation system
+model UserFilmLike {
+  id        String   @id @default(uuid())
+  userId    String
+  filmId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  film      Film     @relation(fields: [filmId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, filmId])
+  @@map("user_film_likes")
+}
+
+// Normalized genres for better filtering and recommendations
+model Genre {
+  id              Int                   @id @default(autoincrement())
+  name            String                @unique
+  films           FilmGenre[]
+  userPreferences UserGenrePreference[]
+
+  @@map("genres")
+}
+
+// Join table between Film and Genre
+model FilmGenre {
+  filmId  String
+  genreId Int
+
+  film  Film  @relation(fields: [filmId], references: [id], onDelete: Cascade)
+  genre Genre @relation(fields: [genreId], references: [id], onDelete: Cascade)
+
+  @@id([filmId, genreId])
+  @@map("film_genres")
+}
+
+// Join table between UserPreferences and Genre (for favorite genres)
+model UserGenrePreference {
+  preferencesId String
+  genreId       Int
+
+  preferences UserPreferences @relation(fields: [preferencesId], references: [id], onDelete: Cascade)
+  genre       Genre           @relation(fields: [genreId], references: [id], onDelete: Cascade)
+
+  @@id([preferencesId, genreId])
+  @@map("user_genre_preferences")
+}
