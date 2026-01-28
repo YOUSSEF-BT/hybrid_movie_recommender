@@ -29,9 +29,11 @@ Le principe d’un recommender hybride est de **fusionner plusieurs méthodes** 
 ## 🧱 Architecture du projet
 
 hybrid_movie_recommender/
-├── backend/ # API + logique de recommandation (Python)
-├── frontend/ # Interface utilisateur (TypeScript)
-└── data/ # Données (datasets / fichiers de travail)
+├── backend/
+├── frontend/
+├── data/
+├── README.md
+└── LICENSE
 
 ---
 
