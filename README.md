@@ -43,7 +43,7 @@ hybrid_movie_recommender/
 
 ## 🚀 Installation
 
-### 1) Cloner le projet
+## 1) Cloner le projet
 
 ```
 git clone https://github.com/YOUSSEF-BT/hybrid_movie_recommender.git
