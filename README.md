@@ -76,6 +76,7 @@ npm run dev
 ## ▶️ Lancer l’application
 
 Backend
+
 Exemples (à adapter selon ton framework) :
 FastAPI
 ```
