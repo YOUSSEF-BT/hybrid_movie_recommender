@@ -27,14 +27,14 @@ Le principe d’un recommender hybride est de **fusionner plusieurs méthodes** 
 ---
 
 ## 🧱 Architecture du projet
-
+```
 hybrid_movie_recommender/
 ├── backend/
 ├── frontend/
 ├── data/
 ├── README.md
 └── LICENSE
-
+```
 ---
 
 ## 🛠️ Tech Stack
