@@ -128,18 +128,6 @@ Le dossier data/ contient les données nécessaires (datasets, exports, etc.).
 
  Déployer (Render / Railway / Vercel / VPS)
  
-
-## 🖼️ Screenshots / Demo
-
-Ajoute ici des captures ou un GIF :
-
-UI (homepage)
-
-Page résultats de recommandations
-
-Exemple d’appel API (Postman)
-
-
 ## 👥 Auteurs / Contributeurs
 
 Réalisé par :
