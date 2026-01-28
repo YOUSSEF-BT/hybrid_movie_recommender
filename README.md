@@ -67,13 +67,14 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 ```
-##3) Frontend (Node/TypeScript)
+## 3) Frontend (Node/TypeScript)
 
 ```
 cd ../frontend
 npm install
 npm run dev
 ```
+--- 
 
 ▶️ Lancer l’application
 Backend
@@ -93,6 +94,7 @@ Frontend
 ```
 npm run dev
 ```
+---
 
 🔌 API (exemple)
 
@@ -109,6 +111,7 @@ Exemple de payload :
   "top_k": 10
 }
 ```
+---
 
 📊 Données
 
