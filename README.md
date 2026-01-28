@@ -1,6 +1,6 @@
 # 🎬 Hybrid Movie Recommender
 
-Projet réalisé en binôme par **Youssef BT** et **MohamedAmine Azirgui (maaaz5)**.
+Projet réalisé en binôme par **Youssef BT** et **MohamedAmine Azirgui**.
 
 Un **système de recommandation de films hybride** (hybrid recommender) qui combine plusieurs signaux (ex. contenu + comportements utilisateurs) pour proposer des films pertinents.
 
