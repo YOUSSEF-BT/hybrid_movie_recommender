@@ -55,6 +55,7 @@ cd hybrid_movie_recommender
 ## 2) Backend (Python)
 
 Selon ton projet, il peut y avoir un requirements.txt ou un pyproject.toml.
+```
 cd backend
 python -m venv .venv
 
@@ -65,7 +66,7 @@ source .venv/bin/activate
 # .venv\Scripts\Activate.ps1
 
 pip install -r requirements.txt
-
+```
 ##3) Frontend (Node/TypeScript)
 
 ```
