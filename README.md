@@ -12,7 +12,6 @@ Un **système de recommandation de films hybride** (hybrid recommender) qui comb
 - Combiner plusieurs approches (hybride) pour améliorer la pertinence
 - Fournir une interface (frontend) + une API (backend)
 
----
 
 ## 🧠 Approche (Hybrid Recommender)
 
@@ -24,7 +23,6 @@ Le principe d’un recommender hybride est de **fusionner plusieurs méthodes** 
 
 > 💡 Astuce : si tu veux un README 100% fidèle à ton implémentation, remplace cette section par les algos exacts utilisés (TF-IDF, embeddings, KNN/SVD, pondérations, etc.).
 
----
 
 ## 🧱 Architecture du projet
 ```
@@ -35,7 +33,6 @@ hybrid_movie_recommender/
 ├── README.md
 └── LICENSE
 ```
----
 
 ## 🛠️ Tech Stack
 
@@ -43,7 +40,6 @@ hybrid_movie_recommender/
 - **Frontend** : TypeScript (UI web)
 - **Data** : datasets & fichiers nécessaires à l’entraînement / l’inférence
 
----
 
 ## 🚀 Installation
 
@@ -76,7 +72,6 @@ cd ../frontend
 npm install
 npm run dev
 ```
---- 
 
 ## ▶️ Lancer l’application
 Backend
@@ -96,7 +91,6 @@ Frontend
 ```
 npm run dev
 ```
----
 
 ## 🔌 API (exemple)
 
@@ -113,7 +107,6 @@ Exemple de payload :
   "top_k": 10
 }
 ```
----
 
 ## 📊 Données
 
@@ -121,7 +114,6 @@ Le dossier data/ contient les données nécessaires (datasets, exports, etc.).
 
 ⚠️ Important : si les fichiers sont lourds, évite de les commit (ou utilise Git LFS) et documente comment les télécharger/générer.
 
----
 
 ## ✅ Roadmap (idées)
 
@@ -135,7 +127,6 @@ Le dossier data/ contient les données nécessaires (datasets, exports, etc.).
 
  Déployer (Render / Railway / Vercel / VPS)
  
- ---
 
 ## 🖼️ Screenshots / Demo
 
@@ -147,7 +138,6 @@ Page résultats de recommandations
 
 Exemple d’appel API (Postman)
 
----
 
 ## 👥 Auteurs / Contributeurs
 
