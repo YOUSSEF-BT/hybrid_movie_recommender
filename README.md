@@ -76,7 +76,7 @@ npm run dev
 ```
 --- 
 
-▶️ Lancer l’application
+## ▶️ Lancer l’application
 Backend
 
 Exemples (à adapter selon ton framework) :
@@ -96,7 +96,7 @@ npm run dev
 ```
 ---
 
-🔌 API (exemple)
+## 🔌 API (exemple)
 
 À adapter selon tes routes réelles.
 
@@ -113,7 +113,7 @@ Exemple de payload :
 ```
 ---
 
-📊 Données
+## 📊 Données
 
 Le dossier data/ contient les données nécessaires (datasets, exports, etc.).
 
@@ -121,7 +121,7 @@ Le dossier data/ contient les données nécessaires (datasets, exports, etc.).
 
 ---
 
-✅ Roadmap (idées)
+## ✅ Roadmap (idées)
 
  Ajouter une évaluation (Precision@K, Recall@K, NDCG, RMSE/MAE)
 
@@ -135,7 +135,7 @@ Le dossier data/ contient les données nécessaires (datasets, exports, etc.).
  
  ---
 
-🖼️ Screenshots / Demo
+## 🖼️ Screenshots / Demo
 
 Ajoute ici des captures ou un GIF :
 
@@ -147,7 +147,7 @@ Exemple d’appel API (Postman)
 
 ---
 
-👥 Auteurs / Contributeurs
+## 👥 Auteurs / Contributeurs
 
 Réalisé par :
 
