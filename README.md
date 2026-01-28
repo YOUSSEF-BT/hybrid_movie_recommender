@@ -119,6 +119,8 @@ Le dossier data/ contient les données nécessaires (datasets, exports, etc.).
 
 ⚠️ Important : si les fichiers sont lourds, évite de les commit (ou utilise Git LFS) et documente comment les télécharger/générer.
 
+---
+
 ✅ Roadmap (idées)
 
  Ajouter une évaluation (Precision@K, Recall@K, NDCG, RMSE/MAE)
@@ -130,6 +132,8 @@ Le dossier data/ contient les données nécessaires (datasets, exports, etc.).
  Dockeriser (backend + frontend)
 
  Déployer (Render / Railway / Vercel / VPS)
+ 
+ ---
 
 🖼️ Screenshots / Demo
 
@@ -140,6 +144,8 @@ UI (homepage)
 Page résultats de recommandations
 
 Exemple d’appel API (Postman)
+
+---
 
 👥 Auteurs / Contributeurs
 
